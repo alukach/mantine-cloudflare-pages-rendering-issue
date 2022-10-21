@@ -10,6 +10,7 @@ import {
 import { createEmotionCache, MantineProvider } from "@mantine/core";
 import { StylesPlaceholder } from "@mantine/remix";
 import { theme } from "./theme";
+import { HeaderAction } from "~/components/Header";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -29,6 +30,7 @@ export default function App() {
           <Links />
         </head>
         <body>
+          <HeaderAction />
           <Outlet />
           <ScrollRestoration />
           <Scripts />
